@@ -27,6 +27,7 @@
   gnupg
   pass
   gallery-dl
+  gh
   git
   fzf
   curl
