@@ -1,12 +1,10 @@
-{ config, pkgs, ... }:
-
 {
-  
+
   imports = [
-    ./modules/bundle.nix
     ./zsh.nix
-    ];
-  
+    ./modules/bundle.nix
+  ];
+
   home = {
     username = "darrow";
     homeDirectory = "/home/darrow";

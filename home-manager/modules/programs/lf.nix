@@ -3,6 +3,16 @@
   programs.lf = {
     enable = true;
     commands = {
+    
+    zip-files = ''
+      ''${{
+      printf "Enter zip archive name: "
+      read name
+      unset files
+      echo "$fx" | while read -r l ; do { file="$(echo "$l" | rev | cut -d '/' -f 1 | rev)" ; zip -r "$name" "$file" ;} ; done
+	clear
+      }}'';
+
      mkdir = ''
       ''${{
         printf "Directory Name: "
@@ -15,6 +25,7 @@
     keybindings = {
 	a = "mkdir";
 	D = "delete";
+	zip = "zip-files";
    };
 
     settings = {

@@ -1,14 +1,18 @@
-{ pkgs, config, lib, ...}:
-
 {
   imports = [
     ./programs/lf.nix
-    ./programs/home-manager.nix
+    ./programs/newsboat.nix
+    ./programs/kitty.nix
+    ./programs/rofi.nix
 
-    ./fonts.nix
+    ./cursor.nix
+    ./git.nix
+    ./htop.nix
+    ./alacritty.nix
     ./gtk.nix
+    ./fonts.nix
 
-    ./wm/hyprland.nix
-    ./wm/waybar.nix
+    ./wms/hyprland.nix
+    ./wms/waybar.nix
   ];
 }

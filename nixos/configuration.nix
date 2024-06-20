@@ -1,21 +1,16 @@
-{ inputs, config, pkgs, ... }:
 
 {
   imports =
     [ 
-
       ./hardware-configuration.nix
       ./packages.nix
       ./modules/bundle.nix
-
     ];
 
   disabledModules = [
-
     ./modules/xserver.nix
-
   ];
-
+  
   networking.hostName = "nixos"; # Define your hostname.
 
   time.timeZone = "America/Caracas"; # Set your time zone.

@@ -28,11 +28,15 @@
   pass
   gallery-dl
   gh
+  lf
+  newsboat
   git
   fzf
   curl
   unar
   p7zip
+  zip
+  unzip
   swww
   ueberzugpp
   pinentry-curses
@@ -41,6 +45,8 @@
 
   # GUI Utils
   dunst
+  zathura
+  nsxiv
 
   # Wine
   wineWowPackages.stable
@@ -65,9 +71,13 @@
 
   # Other
   home-manager
+  libsForQt5.qtstyleplugin-kvantum
+  libsForQt5.qt5.qtwayland
+  libsForQt5.qt5ct
   socat
   html-xml-utils
   libnotify
+  pywal
 
   ];
 

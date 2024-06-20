@@ -9,7 +9,7 @@
         position = "top";
         margin = "9 13 -10 18";
 
-        modules-left = ["hyprland/workspaces" "hyprland/language" "keyboard-state" "hyprland/submap"];
+        modules-left = ["hyprland/workspaces" "hyprland/language" "keyboard-state" "hyprland/submap" "hyprland/window"];
         modules-center = ["clock" "custom/weather"];
         modules-right = ["tray" "pulseaudio" "custom/mem" "backlight" "battery"];
 
@@ -33,6 +33,8 @@
             unlocked = "";
         };
     };
+
+    "hyprland/window" = { max-length = 50; };
 
     "clock" = {
         # timezone = "America/New_York";
@@ -138,6 +140,12 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+#window {
+
+   color: #ffffff;
+
+}
+
 #workspaces {
     margin-right: 8px;
     border-radius: 10px;
@@ -179,7 +187,7 @@ window#waybar.hidden {
     border-radius: 10px 0px 0px 10px;
     transition: none;
     color: #ffffff;
-    background: #383c4a;
+    background: transparent;
 }
 
 #keyboard-state {
@@ -188,7 +196,7 @@ window#waybar.hidden {
     border-radius: 0px 10px 10px 0px;
     transition: none;
     color: #ffffff;
-    background: #383c4a;
+    background: transparent;
 }
 
 #custom-pacman {
@@ -215,7 +223,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #ffffff;
-    background: #383c4a;
+    background: transparent;
 }
 
 #clock {
@@ -342,3 +350,4 @@ window#waybar.hidden {
       '';
   };
 }
+
