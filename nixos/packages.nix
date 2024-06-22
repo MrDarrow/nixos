@@ -49,7 +49,7 @@
   nsxiv
 
   # Wine
-  wineWowPackages.stable
+  wineWowPackages.waylandFull
   winetricks
 
   # Wayland stuff
@@ -78,6 +78,8 @@
   html-xml-utils
   libnotify
   pywal
+  gst_all_1.gst-plugins-bad
+
 
   ];
 

@@ -4,6 +4,8 @@
     enable = true;
     commands = {
     
+    dragon-out = ''%${pkgs.xdragon}/bin/xdragon -a -x "$fx"'';
+
     zip-files = ''
       ''${{
       printf "Enter zip archive name: "
@@ -24,6 +26,7 @@
 
     keybindings = {
 	a = "mkdir";
+	g = "dragon-out";
 	D = "delete";
 	zip = "zip-files";
    };

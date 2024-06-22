@@ -29,7 +29,7 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
-        "XCURSOR_SIZE,36"
+        "XCURSOR_SIZE,24"
       ];
 
       debug = {
@@ -46,7 +46,6 @@
 
         layout = "master";
 
-        no_cursor_warps = false;
       };
 
       input = {
@@ -130,7 +129,9 @@
 	"float, title:(Image .* Grabber)"
 	"size 70%, title:(Image .* Grabber)"
 	"center (1), title:(Image .* Grabber)"
-        "float, title:(.* mpv .*)"
+        "float, title:(.* mpv)" 
+	"size 70%, title:(.* mpv)"
+	"center (1), title:(.* mpv)"
       ];
 
 

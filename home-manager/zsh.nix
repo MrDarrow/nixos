@@ -15,6 +15,7 @@
     jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish -i";
     gallery = ''gallery-dl -f "/O" -d ~/Pictures'';
     rjscrap = "sh ~/.local/bin/scrapper.sh";
+    packages = "sudo nvim /etc/nixos/packages.nix";
     update = "sudo nixos-rebuild switch";
     };
 
