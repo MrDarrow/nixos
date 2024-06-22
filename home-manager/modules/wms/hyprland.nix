@@ -138,7 +138,7 @@
       bind = [
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
        "$mainMod, RETURN, exec, $terminal"
-       "$mainMod SHIFT, RETURN, exec, [float;size 40%] $terminal"
+       "$mainMod SHIFT, RETURN, exec, [float;size 50%] $terminal"
        "$mainMod, Q, killactive,"
        "$mainMod SHIFT, Q, exit,"
        "$mainMod, U, togglefloating,"
