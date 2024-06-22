@@ -13,6 +13,7 @@
   # Desktop apps
   kitty
   librewolf
+  krita
   freetube
   vesktop
   mpv
