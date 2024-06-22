@@ -14,6 +14,7 @@
   kitty
   librewolf
   krita
+  obs-studio
   freetube
   vesktop
   mpv
@@ -35,6 +36,7 @@
   fzf
   curl
   unar
+  jq
   p7zip
   zip
   unzip
