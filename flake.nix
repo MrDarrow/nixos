@@ -4,11 +4,13 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
-    home-manager = {
+  home-manager = {
       
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      };
+   url = "github:nix-community/home-manager";
+    inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 
@@ -21,9 +23,15 @@
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 
+        specialArgs = {inherit inputs;};
+
         inherit system;
 
-	modules = [ ./nixos/configuration.nix ];
+	modules = [ 
+
+	./nixos/configuration.nix 
+
+	];
 
       };
 

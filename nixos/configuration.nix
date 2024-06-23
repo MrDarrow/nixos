@@ -1,3 +1,4 @@
+{ inputs, ... }:
 
 {
   imports =
@@ -11,6 +12,8 @@
     ./modules/xserver.nix
   ];
   
+#  stylix.image = /home/darrow/Downloads/nixos-chan.png;
+
   networking.hostName = "nixos"; # Define your hostname.
 
   time.timeZone = "America/Caracas"; # Set your time zone.

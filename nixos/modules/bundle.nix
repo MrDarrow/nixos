@@ -3,6 +3,7 @@
 {
 
   imports = [
+#  ./stylix/stylix.nix
   
   ./bootloader.nix
   ./sound.nix
