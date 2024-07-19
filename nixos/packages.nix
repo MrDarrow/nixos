@@ -18,6 +18,7 @@
   freetube
   vesktop
   mpv
+  cmatrix
   lutris
   transmission_3-gtk
   rofi-wayland
