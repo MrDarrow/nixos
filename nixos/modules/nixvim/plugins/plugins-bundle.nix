@@ -1,9 +1,0 @@
-{
-
-  imports = [
-
-  ./transparent.nix
-
-  ];
-
-}

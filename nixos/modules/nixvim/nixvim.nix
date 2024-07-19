@@ -2,7 +2,7 @@
 
   imports = [
 
-  ./plugins/plugins-bundle.nix
+  ./plugins.nix
 
   ];
 
