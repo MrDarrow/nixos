@@ -3,7 +3,8 @@
 {
 
   imports = [
-  
+  ./nixvim/nixvim.nix
+
   ./bootloader.nix
   ./sound.nix
   ./hyprland.nix

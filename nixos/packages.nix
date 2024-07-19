@@ -8,14 +8,6 @@
 
   };
 
-  programs.nixvim = {
-
-    enable = true;
-
-    defaultEditor = true;
-
- };
-
   environment.systemPackages = with pkgs; [
 
   # Desktop apps
