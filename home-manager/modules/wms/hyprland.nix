@@ -83,9 +83,11 @@
         preserve_split = true; # you probably want this
       };
 
-      master = {
-        new_is_master = true;
-      };
+ master = {
+  new_status="master";
+   new_on_top=1;
+   mfact = 0.5;
+ };
 
 
       decoration = {
