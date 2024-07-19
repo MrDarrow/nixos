@@ -13,6 +13,7 @@
     rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
     upd = "nix flake update ${flakeDir}";
     upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
+    push = "sudo git push";
 
     hms = "home-manager switch --flake ${flakeDir}";
 
