@@ -9,8 +9,8 @@
 
       monitor = [
 
-      "LVDS-1,1920x1080@60,1440x0,1"
-      "VGA-1, 1440x900@60, 0x0, 1"
+      "LVDS-1,1920x1080@60,1920x0,1"
+      "VGA-1, 1920x1200@60, 0x0, 1"
       ",preferred,auto,auto"
 
       ];
@@ -155,7 +155,7 @@
        "$mainMod, W, exec, librewolf"
        "$mainMod, D, exec, freetube"
        "$mainMod, P, exec, rofi -show drun -show-icons"
-       "$mainMod, F, exec, $terminal lf"
+       "$mainMod, F, exec, $terminal yazi"
        "$mainMod, N, exec, $terminal newsboat"
 
 

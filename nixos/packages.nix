@@ -8,6 +8,14 @@
 
   };
 
+  programs.nixvim = {
+
+    enable = true;
+
+    defaultEditor = true;
+
+ };
+
   environment.systemPackages = with pkgs; [
 
   # Desktop apps
@@ -19,8 +27,7 @@
   vesktop
   mpv
   lutris
-  transmission-gtk
-  imgbrd-grabber
+  transmission_3-gtk
   rofi-wayland
 
   # CLI utils
@@ -30,7 +37,7 @@
   pass
   gallery-dl
   gh
-  lf
+  yazi
   newsboat
   git
   fzf
@@ -44,7 +51,6 @@
   ueberzugpp
   pinentry-curses
   vim
-  neovim
 
   # GUI Utils
   dunst

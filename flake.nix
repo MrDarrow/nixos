@@ -10,6 +10,10 @@
     inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
@@ -30,6 +34,7 @@
 	modules = [ 
 
 	./nixos/configuration.nix 
+        inputs.nixvim.nixosModules.nixvim
 
 	];
 

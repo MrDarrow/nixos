@@ -1,6 +1,6 @@
 {
   imports = [
-    ./programs/lf.nix
+#    ./programs/lf.nix
     ./programs/newsboat.nix
     ./programs/kitty.nix
     ./programs/rofi.nix
