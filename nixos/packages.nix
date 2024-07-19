@@ -18,14 +18,15 @@
   freetube
   vesktop
   mpv
-  cmatrix
   lutris
   transmission_3-gtk
   rofi-wayland
 
   # CLI utils
   wget
+  cmatrix
   neofetch
+  pfetch
   gnupg
   pass
   gallery-dl
