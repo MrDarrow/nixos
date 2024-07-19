@@ -133,7 +133,7 @@
 }
 
 window#waybar {
-    background: alpha(#181926, 0.8);
+    background: alpha(#A0A390, 0.8);
 }
 
 window#waybar.hidden {
@@ -142,7 +142,7 @@ window#waybar.hidden {
 
 #window {
 
-   color: #ffffff;
+   color: #191918;
 
 }
 
@@ -161,7 +161,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.persistent {
-    color: #7c818c;
+    color: #568C89;
     font-size: 12px;
 }
 
@@ -171,13 +171,13 @@ window#waybar.hidden {
     box-shadow: inherit;
     text-shadow: inherit;
     border-radius: inherit;
-    color: #383c4a;
-    background: #7c818c;
+    color: #568C89;
+    background: #191918;
 }
 
 #workspaces button.active {
-    background: #4e5263;
-    color: white;
+    background: #568C89;
+    color: #191918;
     border-radius: inherit;
 }
 
@@ -186,7 +186,7 @@ window#waybar.hidden {
     padding-right: 8px;
     border-radius: 10px 0px 0px 10px;
     transition: none;
-    color: #ffffff;
+    color: #191918;
     background: transparent;
 }
 
@@ -195,7 +195,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 0px 10px 10px 0px;
     transition: none;
-    color: #ffffff;
+    color: #191918;
     background: transparent;
 }
 
@@ -204,8 +204,8 @@ window#waybar.hidden {
     padding-right: 8px;
     border-radius: 10px 0px 0px 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #custom-mail {
@@ -213,8 +213,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 0px 10px 10px 0px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #submap {
@@ -222,7 +222,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
+    color: #191918;
     background: transparent;
 }
 
@@ -231,16 +231,16 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px 0px 0px 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #custom-weather {
     padding-right: 16px;
     border-radius: 0px 10px 10px 0px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #pulseaudio {
@@ -249,8 +249,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #pulseaudio.muted {
@@ -264,8 +264,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #cpu {
@@ -274,8 +274,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #temperature {
@@ -284,8 +284,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #temperature.critical {
@@ -298,8 +298,8 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #battery {
@@ -308,12 +308,12 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 #battery.charging {
-    color: #ffffff;
+    color: #191918;
     background-color: #26A65B;
 }
 
@@ -324,7 +324,7 @@ window#waybar.hidden {
 
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #ffffff;
+    color: #191918;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -337,13 +337,13 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: #191918;
+    background: #568C89;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
+        background-color: #191918;
         color: #000000;
     }
 }

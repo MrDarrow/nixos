@@ -19,6 +19,7 @@
 
     conf = "nvim ${flakeDir}/nixos/configuration.nix";
     pkgs = "nvim ${flakeDir}/nixos/packages.nix";
+    plg = "nvim ${flakeDir}/nixos/modules/nixvim/plugins.nix";
 
     ll = "ls -l";
     lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish -i";
