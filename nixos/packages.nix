@@ -23,6 +23,8 @@
   rofi-wayland
 
   # CLI utils
+  xdragon
+  nmap
   wget
   cmatrix
   neofetch

@@ -4,7 +4,7 @@
     enable = true;
     commands = {
     
-    dragon-out = ''%${pkgs.xdragon}/bin/xdragon -a -x "$fx"'';
+    dragon-out = ''%${pkgs.xdragon}/bin/xdragon -a -x \"$fx"\'';
 
     zip-files = ''
       ''${{
