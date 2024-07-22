@@ -4,6 +4,7 @@
     ./programs/newsboat.nix
     ./programs/kitty.nix
     ./programs/rofi.nix
+    ./programs/yazi.nix
 
     ./cursor.nix
     ./git.nix
