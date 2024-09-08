@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports =
@@ -11,7 +11,7 @@
   disabledModules = [
     ./modules/xserver.nix
   ];
-  
+
 #  stylix.image = /home/darrow/Downloads/nixos-chan.png;
 
   networking.hostName = "nixos"; # Define your hostname.

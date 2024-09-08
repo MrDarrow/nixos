@@ -6,6 +6,7 @@
   ./nixvim/nixvim.nix
 
   ./bootloader.nix
+  ./lobster.nix
   ./sound.nix
   ./hyprland.nix
   ./nm.nix

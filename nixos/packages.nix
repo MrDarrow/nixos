@@ -94,7 +94,5 @@
   pywal
   gst_all_1.gst-plugins-bad
 
-
   ];
-
 }
