@@ -49,6 +49,7 @@
   unzip
   swww
   ueberzugpp
+  chafa
   pinentry-curses
   vim
   htop-vim

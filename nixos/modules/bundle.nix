@@ -7,6 +7,7 @@
 
   ./bootloader.nix
   ./lobster.nix
+  ./jerry.nix
   ./sound.nix
   ./hyprland.nix
   ./nm.nix
