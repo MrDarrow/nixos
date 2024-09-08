@@ -15,7 +15,6 @@
   environment.systemPackages = with pkgs; [
 
   # Desktop apps
-  kitty
   librewolf
   krita
   obs-studio
