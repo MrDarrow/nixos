@@ -2,7 +2,8 @@
   description = "My system configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
   home-manager = {
       
@@ -17,7 +18,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
 
     let
 
@@ -27,11 +28,15 @@
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 
-        specialArgs = {inherit inputs;};
+        specialArgs = {
+          pkgs-stable = import nixpkgs-stable { 
+            inherit system;
+            config.allowUnfree = true;
+          };
+	inherit inputs system;
+	};
 
-        inherit system;
-
-	modules = [ 
+      	modules = [ 
 
 	./nixos/configuration.nix 
         inputs.nixvim.nixosModules.nixvim

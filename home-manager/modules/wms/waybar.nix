@@ -133,7 +133,7 @@
 }
 
 window#waybar {
-    background: alpha(#A0A390, 0.8);
+    background: alpha(#a49d86, 0.8);
 }
 
 window#waybar.hidden {
@@ -161,7 +161,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.persistent {
-    color: #568C89;
+    color: #ebe1c0;
     font-size: 12px;
 }
 
@@ -171,12 +171,12 @@ window#waybar.hidden {
     box-shadow: inherit;
     text-shadow: inherit;
     border-radius: inherit;
-    color: #568C89;
+    color: #ebe1c0;
     background: #191918;
 }
 
 #workspaces button.active {
-    background: #568C89;
+    background: #ebe1c0;
     color: #191918;
     border-radius: inherit;
 }
@@ -205,7 +205,7 @@ window#waybar.hidden {
     border-radius: 10px 0px 0px 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #custom-mail {
@@ -214,7 +214,7 @@ window#waybar.hidden {
     border-radius: 0px 10px 10px 0px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #submap {
@@ -232,7 +232,7 @@ window#waybar.hidden {
     border-radius: 10px 0px 0px 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #custom-weather {
@@ -240,7 +240,7 @@ window#waybar.hidden {
     border-radius: 0px 10px 10px 0px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #pulseaudio {
@@ -250,7 +250,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #pulseaudio.muted {
@@ -265,7 +265,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #cpu {
@@ -275,7 +275,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #temperature {
@@ -285,7 +285,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #temperature.critical {
@@ -299,7 +299,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #battery {
@@ -309,7 +309,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 #battery.charging {
@@ -338,7 +338,7 @@ window#waybar.hidden {
     border-radius: 10px;
     transition: none;
     color: #191918;
-    background: #568C89;
+    background: #ebe1c0;
 }
 
 @keyframes blink {

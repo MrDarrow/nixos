@@ -1,12 +1,16 @@
 { pkgs, config, inputs, ... }:
 
 {
-
+  
   nixpkgs.config = {
-    
     allowUnfree = true;
-
   };
+
+  nixpkgs.overlays = [
+    (self: super: {
+#      librewolf = pkgs-stable.librewolf;
+    })
+  ];
 
   environment.systemPackages = with pkgs; [
 
@@ -47,6 +51,7 @@
   ueberzugpp
   pinentry-curses
   vim
+  htop-vim
 
   # GUI Utils
   dunst
