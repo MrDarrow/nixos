@@ -4,7 +4,7 @@
     xwayland.enable = true;
 
     settings = {
-      "$terminal" = "kitty";
+      "$terminal" = "foot";
       "$mainMod" = "SUPER";
 
       monitor = [
