@@ -22,8 +22,8 @@
     plg = "nvim ${flakeDir}/nixos/modules/nixvim/plugins.nix";
 
     ll = "ls -l";
-#    lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish -i";
-#    jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish -i";
+    lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish -i";
+    jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish -i";
     gallery = ''gallery-dl -f "/O" -d ~/Pictures'';
     rjscrap = "sh ~/.local/bin/scrapper.sh";
     };
