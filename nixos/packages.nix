@@ -25,6 +25,7 @@
   lutris
   transmission_3-gtk
   rofi-wayland
+  foot
 
   # CLI utils
   xdragon
@@ -57,6 +58,9 @@
   dunst
   zathura
   nsxiv
+  libreoffice
+  hunspellDicts.es_VE
+  osu-lazer-bin
 
   # Wine
   wineWowPackages.waylandFull
@@ -80,6 +84,7 @@
   wf-recorder
 
   # Other
+  syncthing
   home-manager
   libsForQt5.qtstyleplugin-kvantum
   libsForQt5.qt5.qtwayland
