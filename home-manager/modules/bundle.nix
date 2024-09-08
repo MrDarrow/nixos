@@ -3,6 +3,7 @@
 #    ./programs/lf.nix
     ./programs/newsboat.nix
     ./programs/kitty.nix
+    ./programs/foot.nix
     ./programs/rofi.nix
 
     ./cursor.nix
