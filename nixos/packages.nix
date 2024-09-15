@@ -17,6 +17,7 @@
   # Desktop apps
   librewolf
   krita
+  gimp
   obs-studio
   freetube
   vesktop
@@ -25,6 +26,7 @@
   transmission_3-gtk
   rofi-wayland
   foot
+  imgbrd-grabber
 
   # CLI utils
   xdragon
@@ -33,6 +35,7 @@
   cmatrix
   neofetch
   pfetch
+  yt-dlp
   gnupg
   pass
   gallery-dl
