@@ -1,59 +1,67 @@
 {
   wayland.windowManager.hyprland = {
-   settings = {
-      env = [
-      "XDG_SESSION_TYPE, wayland"
-      "XDG_CURRENT_DESKTOP, Hyprland"
-      "XDG_SESSION_DESKTOP, Hyprland"
+    settings = {
+       env = [
+       "XDG_SESSION_TYPE, wayland"
+       "XDG_CURRENT_DESKTOP, Hyprland"
+       "XDG_SESSION_DESKTOP, Hyprland"
+ 
+       "GDK_BACKEND, wayland, x11"
+       "QT_QPA_PLATFORM, wayland;xcb"
+ 
+       "XCURSOR_SIZE, 24"
+     ];
+ 
+     input = {
+      kb_layout = "us,latam";
+      kb_options = "grp:caps_toggle";
+      kb_variant = "";
+      numlock_by_default = 1;
+ 
+      follow_mouse = 1;
+ 
+      touchpad = {
+        natural_scroll = false;
+      };
+ 
+      sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+    };
+ 
+    general = {
+      gaps_in = 5;
+      gaps_out = 15;
+      border_size = 3;
+ 
+      "col.active_border" = "rgba(ebe1c0ee) rgba(ebe1c0ee) 45deg";
+      "col.inactive_border" = "rgba(a49d86aa)";
+ 
+      layout = "master";
+ 
+    };
+ 
+    misc = {
+      animate_manual_resizes = true;
+      animate_mouse_windowdragging = true;
 
-      "GDK_BACKEND, wayland, x11"
-      "QT_QPA_PLATFORM, wayland;xcb"
+      enable_swallow = true;
+      swallow_regex = "^(foot).*$";
 
-      "XCURSOR_SIZE, 24"
-    ];
+      render_ahead_of_time = false;
+      disable_hyprland_logo = true;
+    };
 
-    input = {
-     kb_layout = "us,latam";
-     kb_options = "grp:caps_toggle";
-     kb_variant = "";
-     numlock_by_default = 1;
-
-     follow_mouse = 1;
-
-     touchpad = {
-       natural_scroll = false;
-     };
-
-     sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
-   };
-
-    monitor = [
-
+   monitor = [
       "LVDS-1,1920x1080@60,1920x0,1"
       "VGA-1, 1920x1200@60, 0x0, 1"
       ",preferred,auto,auto"
-
-      ];
-      debug = {
-        disable_logs = false;
-        enable_stdout_logs = true;
-      };
-
-      general = {
-        gaps_in = 5;
-        gaps_out = 20;
-        border_size = 3;
-        "col.active_border" = "rgba(ebe1c0ee) rgba(ebe1c0ee) 45deg";
-        "col.inactive_border" = "rgba(a49d86aa)";
-
-        layout = "master";
-
-      };
- master = {
-  new_status="master";
-   new_on_top=1;
-   mfact = 0.5;
- };
+    ];
+ 
+ 
+    master = {
+      new_status="master";
+      new_on_top=1;
+      mfact = 0.5;
+    };
 
 
       decoration = {
@@ -100,14 +108,6 @@
       dwindle = {
         pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # you probably want this
-      };
-
-      misc = {
-        animate_manual_resizes = true;
-        animate_mouse_windowdragging = true;
-        enable_swallow = true;
-        render_ahead_of_time = false;
-        disable_hyprland_logo = true;
       };
 
         windowrulev2 = [
