@@ -1,12 +1,14 @@
-{
-  wayland.windowManager.hyprland.settings = {
-    let
-      mod = "SUPER";
-      ctrl = "CONTROL";
-      alt = "ALT";
-      shift = "SHIFT";
+  let
+    mod = "SUPER";
+    ctrl = "CONTROL";
+    alt = "ALT";
+    shift = "SHIFT";
 
-    in
+  in
+{
+
+
+  wayland.windowManager.hyprland.settings = {
       bind = [
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
        "$mainMod, RETURN, exec, $terminal"
@@ -82,6 +84,5 @@
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
       ];
-    };
   };
 }
