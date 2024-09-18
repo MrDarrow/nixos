@@ -13,6 +13,7 @@
   ./gpg.nix
   ./user.nix
   ./env.nix
+  ./scripts.nix
   
   ];
 

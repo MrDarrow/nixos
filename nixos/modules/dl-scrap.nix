@@ -1,6 +1,5 @@
 { pkgs }:
 
-{
   pkgs.writeShellScriptBin "dl-scrap" ''
   
   ${pkgs.wget}/bin/wget "https://www.dlsite.com/maniax/work/=/product_id/$1.html" -P /tmp
@@ -12,4 +11,3 @@
   ${pkgs.wget}/bin/wget $url
   ${pkgs.wget}/bin/wget "$(echo $url | sed 's/_main/_sam_mimi/')"
   ''
-}
