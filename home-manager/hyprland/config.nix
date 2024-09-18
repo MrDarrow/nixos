@@ -1,24 +1,39 @@
 {
   wayland.windowManager.hyprland = {
-    settings = {
-      "$terminal" = "foot";
-      "$mainMod" = "SUPER";
+   settings = {
+      env = [
+      "XDG_SESSION_TYPE, wayland"
+      "XDG_CURRENT_DESKTOP, Hyprland"
+      "XDG_SESSION_DESKTOP, Hyprland"
 
-      monitor = [
+      "GDK_BACKEND, wayland, x11"
+      "QT_QPA_PLATFORM, wayland;xcb"
+
+      "XCURSOR_SIZE, 24"
+    ];
+
+    input = {
+     kb_layout = "us,latam";
+     kb_options = "grp:caps_toggle";
+     kb_variant = "";
+     numlock_by_default = 1;
+
+     follow_mouse = 1;
+
+     touchpad = {
+       natural_scroll = false;
+     };
+
+     sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+   };
+
+    monitor = [
 
       "LVDS-1,1920x1080@60,1920x0,1"
       "VGA-1, 1920x1200@60, 0x0, 1"
       ",preferred,auto,auto"
 
       ];
-
-      env = [
-        "XDG_CURRENT_DESKTOP,Hyprland"
-        "XDG_SESSION_TYPE,wayland"
-        "XDG_SESSION_DESKTOP,Hyprland"
-        "XCURSOR_SIZE,24"
-      ];
-
       debug = {
         disable_logs = false;
         enable_stdout_logs = true;
@@ -34,42 +49,6 @@
         layout = "master";
 
       };
-
-      input = {
-        kb_layout = "us,es";
-        kb_variant = "";
-        kb_options = "grp:caps_toggle";
-
-        follow_mouse = 1;
-
-        touchpad = {
-          natural_scroll = false;
-        };
-
-        sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
-      };
-
-      animations = {
-        enabled = true;
-
-        bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
-        # bezier = "myBezier, 0.33, 0.82, 0.9, -0.08";
-
-        animation = [
-          "windows,     1, 7,  myBezier"
-          "windowsOut,  1, 7,  default, popin 80%"
-          "border,      1, 10, default"
-          "borderangle, 1, 8,  default"
-          "fade,        1, 7,  default"
-          "workspaces,  1, 6,  default"
-        ];
-      };
-
-      dwindle = {
-        pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
-        preserve_split = true; # you probably want this
-      };
-
  master = {
   new_status="master";
    new_on_top=1;
@@ -102,6 +81,26 @@
         workspace_swipe_distance = 200;
         workspace_swipe_forever = true;
       };
+      animations = {
+        enabled = true;
+
+        bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+        # bezier = "myBezier, 0.33, 0.82, 0.9, -0.08";
+
+        animation = [
+          "windows,     1, 7,  myBezier"
+          "windowsOut,  1, 7,  default, popin 80%"
+          "border,      1, 10, default"
+          "borderangle, 1, 8,  default"
+          "fade,        1, 7,  default"
+          "workspaces,  1, 6,  default"
+        ];
+      };
+
+      dwindle = {
+        pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
+        preserve_split = true; # you probably want this
+      };
 
       misc = {
         animate_manual_resizes = true;
@@ -111,7 +110,7 @@
         disable_hyprland_logo = true;
       };
 
-      windowrulev2 = [
+        windowrulev2 = [
 	"workspace 2 silent, class:vesktop"
 	"workspace 4, silent, class:transmission"
 	"float, title:(Open Files)"
@@ -121,7 +120,9 @@
         "float, title:(.* mpv)" 
 	"size 70%, title:(.* mpv)"
 	"center (1), title:(.* mpv)"
-      ];
+        ];
     };
   };
 }
+
+
