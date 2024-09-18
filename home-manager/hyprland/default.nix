@@ -9,8 +9,8 @@
     xwayland.enable = true;
 
     settings = {
-      "$terminal" = "foot";
-      "$mainMod" = "SUPER";
+#      "$terminal" = "foot";
+#      "$mainMod" = "SUPER";
 
       monitor = [
 
@@ -19,17 +19,6 @@
       ",preferred,auto,auto"
 
       ];
-
-     # exec-once = [
-     #   "swww init"
-     #   "swww img ~/Downloads/nixos-chan.png"
-     #   "waybar"
-     #   "wl-paste --type text --watch cliphist store"
-     #   "wl-paste --type image --watch cliphist store"
-     #   "vesktop"
-     #   "syncthing"
-     # ];
-
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"

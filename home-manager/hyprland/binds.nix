@@ -8,8 +8,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     bind = [
-      "${mod}, RETURN, exec, $terminal"
-      "${mod} ${shift}, RETURN, exec, [float;size 50%] $terminal"
+      "${mod}, RETURN, exec, foot"
+      "${mod} ${shift}, RETURN, exec, [float;size 50%] foot"
       "${mod}, Q, killactive,"
       "${mod} ${shift}, Q, exit,"
       "${mod}, U, togglefloating,"
@@ -26,8 +26,8 @@
       "${mod}, W, exec, librewolf"
       "${mod}, D, exec, freetube"
       "${mod}, P, exec, rofi -show drun -show-icons"
-      "${mod}, F, exec, $terminal yazi"
-      "${mod}, N, exec, $terminal newsboat"
+      "${mod}, F, exec, foot yazi"
+      "${mod}, N, exec, foot newsboat"
 
 
        # Move focus with mainMod + arrow keys
