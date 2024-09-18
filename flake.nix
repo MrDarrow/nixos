@@ -47,7 +47,7 @@
 
     homeConfigurations.darrow = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
-      modules = [ ./home-manager/home.nix ];
+      modules = [ ./home-manager/default.nix ];
     };
   };
 
