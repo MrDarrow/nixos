@@ -13,7 +13,6 @@
     rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
     upd = "nix flake update ${flakeDir}";
     upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
-    push = "sudo git push";
 
     hms = "home-manager switch --flake ${flakeDir}";
 
@@ -25,7 +24,6 @@
     lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish -i";
     jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish -i";
     gallery = ''gallery-dl -f "/O" -d ~/Pictures'';
-    rjscrap = "sh ~/.local/bin/scrapper.sh";
     };
 
     history.size = 10000;
