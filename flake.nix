@@ -49,7 +49,10 @@
 
     homeConfigurations.darrow = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
-      modules = [ ./home-manager/default.nix ];
+      modules = [ 
+        ./home-manager/default.nix
+        inputs.schizofox.homeManagerModule
+      ];
     };
   };
 
