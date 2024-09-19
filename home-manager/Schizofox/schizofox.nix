@@ -1,6 +1,6 @@
 {
   imports = [
-    ./bookmarks.nix
+    ./bookmarks/bookmarks.nix
   ];
 
   programs.schizofox = {
