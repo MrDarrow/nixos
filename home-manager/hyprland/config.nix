@@ -1,3 +1,8 @@
+let
+  active = "5e81acaa";
+  inactive = "a19fa1aa";
+
+in
 {
   wayland.windowManager.hyprland = {
     settings = {
@@ -32,8 +37,8 @@
       gaps_out = 15;
       border_size = 3;
  
-      "col.active_border" = "rgba(ebe1c0ee) rgba(ebe1c0ee) 45deg";
-      "col.inactive_border" = "rgba(a49d86aa)";
+      "col.active_border" = "rgba(${active})";
+      "col.inactive_border" = "rgba(${inactive})"; #a49d86aa
  
       layout = "master";
  
@@ -104,6 +109,9 @@
       "float, title:(.* mpv)" 
       "size 70%, title:(.* mpv)"
       "center (1), title:(.* mpv)"
+      "float,title:(pulsemixer)"
+      "size 70%, title:(pulsemixer)"
+      "center (1), title:(pulsemixer)"
     ];
  
     monitor = [
