@@ -1,8 +1,4 @@
 {
-  imports = [
-    ./bookmarks.nix
-  ];
-
   programs.schizofox = {
 
     misc = {
@@ -16,6 +12,7 @@
           Title = "Schizofox | github";
           URL = "https://github.com/schizofox/schizofox";
           Folder = "Github";
+        }
       ];
     };
   };
