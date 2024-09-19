@@ -1,5 +1,6 @@
 {
   imports = [
-    ./bookmarks-github.nix
+    ./github.nix
+    ./boorus.nix
   ];
 }

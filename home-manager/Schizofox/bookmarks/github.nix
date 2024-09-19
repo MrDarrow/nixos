@@ -41,8 +41,6 @@ in
           URL = "https://github.com/nestoris/Win98SE";
           Folder = "${gh}";
         }
-        {
-          Title = "";
       ];
     };
   };
