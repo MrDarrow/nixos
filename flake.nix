@@ -16,6 +16,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    schizofox.url = "github:schizofox/schizofox";
+
   };
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
