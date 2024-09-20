@@ -21,7 +21,7 @@ in
           Folder = "${dl}";
         }
         {
-          Title = "復讐者の闇取引 [Makai "A" Business Office]";
+          Title = "復讐者の闇取引 [Makai 'A' Business Office]";
           URL = "https://www.dlsite.com/maniax/work/=/product_id/RJ01153473";
           Folder = "${dl}";
         }

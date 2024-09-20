@@ -14,7 +14,7 @@ in
           Title = "今後について - ぶるえも";
           URL = "https://ci-en.dlsite.com/creator/15339/article/1010125";
           Folder = "${ci}";
-        };
+        }
       ];
     };
   };
