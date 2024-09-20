@@ -3,10 +3,10 @@
 {
 
   imports = [
-    ./zsh.nix
+    ./zsh/default.nix
     ./hyprland/default.nix
+    ./schizofox/default.nix
     ./waybar.nix
-    ./Schizofox/schizofox.nix
     ./modules/bundle.nix
   ];
 
