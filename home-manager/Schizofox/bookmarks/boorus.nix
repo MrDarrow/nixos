@@ -1,10 +1,10 @@
 let
-  br = "boorus";
+  br = "Boorus";
 in
 {
   programs.schizofox = {
     misc = {
-      bookmarks = {
+      bookmarks = [
         {
           Title = "Danbooru: Anime Image Board";
           URL = "https://danbooru.donmai.us/";
@@ -15,7 +15,7 @@ in
           URL = "https://danbooru.donmai.us/posts?page=1&tags=ordfav%3AMyatouush";
           Folder = "${br}";
         }
-      };
+      ];
     };
   };
 }

@@ -1,0 +1,15 @@
+let
+in
+{
+  programs.schizofox = {
+    misc = {
+      bookmarks = [
+        {
+          Title = "";
+          URL = "";
+          Folder = "";
+        }
+      ];
+    };
+  };
+}
