@@ -25,6 +25,8 @@
   transmission_3-gtk
   rofi-wayland
   foot
+  discordo
+  godot_4
   imgbrd-grabber
 
   # CLI utils

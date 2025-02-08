@@ -3,6 +3,7 @@
   imports = [
 
   ./plugins.nix
+  ./opts.nix
 
   ];
 

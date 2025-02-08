@@ -57,9 +57,9 @@
       ];
     };
 
-    security = {
-      sanitizeOnShutdown = false;
-    };
+    #security = {
+    #  sanitizeOnShutdown = false;
+    #};
     misc = {
       drm.enable= true;
       disableWebgl = false;

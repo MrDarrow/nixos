@@ -26,7 +26,7 @@ in
     settings = {
       main = {
         font = "JetBrains Mono:size=13";
-	pad = "10x10";
+	    pad = "0x0";
        };
 
       colors = {
@@ -53,7 +53,7 @@ in
 	bright6  = "${b6}";
 	bright7  = "${b7}";
       }; 
-
+      
       key-bindings = {
         show-urls-copy = "Control+Shift+y";
         scrollback-up-half-page = "Control+k";
