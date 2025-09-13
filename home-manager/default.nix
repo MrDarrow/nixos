@@ -3,7 +3,7 @@
 {
 
   imports = [
-#    ./zsh/default.nix
+    ./zsh/default.nix
 #    ./hyprland/default.nix
 #    ./schizofox/default.nix
 #    ./waybar.nix
