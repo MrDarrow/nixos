@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, ... }: {
 
-  enviroment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     vim
     libreoffice
     gimp
@@ -18,3 +18,4 @@
     protonvpn-gui
     mpv
   ];
+}
