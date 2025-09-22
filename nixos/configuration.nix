@@ -6,8 +6,9 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
+      ./packages.nix
     ];
 
   # Bootloader.
@@ -24,6 +25,11 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  hardware.opengl = {
+	enable = true;
+	driSupport32Bit = true;
+  };
 
   # Set your time zone.
   time.timeZone = "America/Caracas";
@@ -83,6 +89,7 @@
   users.users.darrow = {
     isNormalUser = true;
     description = "Darrow";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
@@ -98,13 +105,32 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-   home-manager
-   git
-   gh
-  #  wget
-  ];
+#  environment.systemPackages = with pkgs; [
+#   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+#   libreoffice
+#   gimp
+#   unar
+#   home-manager
+#   git
+#   gh
+#   floorp
+#   vesktop
+#   wineWowPackages.wayland
+#   
+#   mindustry
+#   mindustry-server
+#
+#   tor-browser
+#   protonvpn-gui
+#   mpv
+#  #  wget
+#  ];
+
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+  programs.zsh.enable = true;
+  programs.nixvim.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -127,6 +153,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+  networking.firewall.checkReversePath = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
