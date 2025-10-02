@@ -101,6 +101,7 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+  environment.systemPackages = [ inputs.zen-browser.packages.x86_64-linux.default ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

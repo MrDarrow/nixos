@@ -17,7 +17,6 @@
     mindustry-server
 
     protonvpn-gui
-    inputs.zen-browser.packages."${system}".specific
-    mpv
+        mpv
   ];
 }
