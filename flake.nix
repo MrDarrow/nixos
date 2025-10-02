@@ -21,7 +21,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, zen-browser, ... }@inputs: 
 
     let
 
