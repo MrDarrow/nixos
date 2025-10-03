@@ -6,7 +6,6 @@
 
   home.packages = with pkgs; [
     font-awesome
-    nerdfonts
     jetbrains-mono
   ];
 

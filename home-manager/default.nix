@@ -4,10 +4,11 @@
 
   imports = [
     ./zsh/default.nix
-#    ./hyprland/default.nix
+    ./hyprland/default.nix
 #    ./schizofox/default.nix
-#    ./waybar.nix
-#    ./modules/bundle.nix
+    ./waybar.nix
+    ./modules/bundle.nix
+    ./hyprpaper.nix
   ];
 
   home = {

@@ -58,6 +58,11 @@
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -101,7 +106,8 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-  environment.systemPackages = [ inputs.zen-browser.packages.x86_64-linux.default ];
+  environment.systemPackages = [ 
+  ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

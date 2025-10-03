@@ -23,7 +23,7 @@
       "${mod} ${shift}, K, layoutmsg, swapprev"
 
        # Programs
-      "${mod}, W, exec, schizofox"
+      "${mod}, W, exec, floorp"
       "${mod}, D, exec, freetube"
       "${mod}, P, exec, rofi -show drun -show-icons"
       "${mod}, F, exec, foot yazi"
