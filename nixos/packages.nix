@@ -1,10 +1,6 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    foot
-    swww
-    hyprpaper
-    pulsemixer
     kitty
     vim
     libreoffice
