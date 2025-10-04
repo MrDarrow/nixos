@@ -30,7 +30,7 @@
 
   hardware.graphics = {
 	enable = true;
-	Support32Bit = true;
+	enable32Bit = true;
   };
 
   # Set your time zone.
