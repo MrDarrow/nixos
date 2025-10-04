@@ -28,9 +28,9 @@
   networking.wireless.iwd.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
 
-  hardware.opengl = {
+  hardware.graphics = {
 	enable = true;
-	driSupport32Bit = true;
+	Support32Bit = true;
   };
 
   # Set your time zone.
