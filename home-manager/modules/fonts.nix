@@ -6,6 +6,8 @@
 
   home.packages = with pkgs; [
     font-awesome
+    nanum
+    nanum-gothic-coding
     jetbrains-mono
   ];
 
