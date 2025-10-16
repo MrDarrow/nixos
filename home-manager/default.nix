@@ -7,7 +7,7 @@
 #    ./hyprland/default.nix
 #    ./schizofox/default.nix
 #    ./waybar.nix
-#    ./modules/bundle.nix
+    ./modules/bundle.nix
 #    ./hyprpaper.nix
   ];
 

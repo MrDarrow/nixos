@@ -2,9 +2,16 @@
 
   environment.systemPackages = with pkgs; [
     kitty
+    czkawka
+    youtube-music
+    ffmpeg
+    lutris
     kdePackages.kalk
     vim
     libreoffice
+    hunspell
+    hunspellDicts.es-ve
+    hunspellDicts.es-any
     gimp
     unar
     home-manager
