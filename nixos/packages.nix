@@ -3,6 +3,8 @@
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     kitty
+    wofi
+    foot
     czkawka
     youtube-music
     ffmpeg

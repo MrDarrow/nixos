@@ -59,6 +59,10 @@
 #  services.displaymanager.sddm.enable = true;
   services.displayManager.ly.enable = true;
   services.desktopManager.plasma6.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
