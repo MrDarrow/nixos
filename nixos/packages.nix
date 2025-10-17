@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    (import ./dl-scrap.nix { inherit pkgs; })
     kitty
     czkawka
     youtube-music
