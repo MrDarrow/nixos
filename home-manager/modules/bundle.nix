@@ -11,7 +11,7 @@
 #    ./alacritty.nix
 #    ./gtk.nix
 #    ./fonts.nix
-    ./dl-scrap.nix
+#    ./dl-scrap.nix
 #
   ];
 }

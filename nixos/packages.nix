@@ -3,7 +3,9 @@
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     kitty
+    hyprpaper
     wofi
+    rofi
     foot
     czkawka
     youtube-music
