@@ -29,7 +29,6 @@
     kb-remove-word-back: "";
 
     }
-    @import "~/.cache/wal/colors-rofi-dark.rasi"
   '';
 
 }

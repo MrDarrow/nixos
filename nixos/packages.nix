@@ -3,6 +3,11 @@
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     kitty
+    grim
+    slurp
+    wl-clipboard
+    pfetch
+    yazi
     hyprpaper
     wofi
     rofi
