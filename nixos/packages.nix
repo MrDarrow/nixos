@@ -2,8 +2,9 @@
 
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
-    kitty
     grim
+    hyprcursor
+    rose-pine-hyprcursor
     slurp
     wl-clipboard
     pfetch
@@ -17,6 +18,8 @@
     ffmpeg
     lutris
     kdePackages.kalk
+    kdePackages.dolphin
+    nautilus
     vim
     libreoffice
     hunspell
@@ -30,15 +33,11 @@
     floorp-bin
     vesktop
     wineWowPackages.wayland
-    plasma-panel-colorizer
     waybar
     htop-vim
 
-    mindustry
-    mindustry-server
-
     protonvpn-gui
-        mpv
-	fzf
+    mpv
+    fzf
   ];
 }

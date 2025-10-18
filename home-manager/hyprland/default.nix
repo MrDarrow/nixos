@@ -28,7 +28,7 @@
 #        border_size = 3;
 #        "col.active_border" = "rgba(ebe1c0ee) rgba(ebe1c0ee) 45deg";
 #        "col.inactive_border" = "rgba(a49d86aa)";
-#
+##
 #        layout = "master";
 #
 #      };
