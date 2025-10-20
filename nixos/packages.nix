@@ -22,7 +22,6 @@
     floorp-bin
     vesktop
     wineWowPackages.wayland
-    waybar
     htop-vim
 
     protonvpn-gui
