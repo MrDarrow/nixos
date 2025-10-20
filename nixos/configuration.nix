@@ -93,7 +93,7 @@
     isNormalUser = true;
     description = "Darrow";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "syncthing" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
@@ -136,6 +136,16 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
   programs.nixvim.enable = true;
+
+  services = {
+    syncthing = {
+      enable = true;
+      group = "syncthing";
+      user = "darrow";
+      dataDir = "/home/darrow/syncthing";
+      configDir = "/home/darrow/.config/syncthing";
+    };
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
