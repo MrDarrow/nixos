@@ -4,6 +4,7 @@
 #    ./programs/newsboat.nix
 #   ./programs/foot.nix
 #   ./programs/rofi.nix
+    ./niri-config.nix
 #
 #    ./cursor.nix
 #    ./git.nix
