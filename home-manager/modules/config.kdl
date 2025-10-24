@@ -82,20 +82,28 @@ layout {
     }
 
     struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
+//         left 16
+//         right 16
+//         top 16 
+//         bottom 16
     }
 }
 
 // exec
 spawn-at-startup "waybar"
+spawn-at-startup "vesktop"
+spawn-at-startup "steam"
 spawn-sh-at-startup "swaybg -i ~/Pictures/Wallpaper/1.png"
 spawn-sh-at-startup "pw-metadata -n settings 0 clock.force-quantum 2048"
 
 hotkey-overlay {
      skip-at-startup
+}
+
+gestures {
+  hot-corners {
+    off
+  }
 }
 
 prefer-no-csd 
@@ -182,6 +190,7 @@ binds {
     Mod+W { spawn "floorp"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+N { spawn "foot" "yazi"; }
 
     // Switch workspaces
     Mod+1 { focus-workspace 1; }

@@ -16,10 +16,14 @@
     };
 
     schizofox.url = "github:schizofox/schizofox";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix, ... }@inputs: 
 
     let
 
@@ -41,6 +45,7 @@
 
 	./nixos/configuration.nix 
         inputs.nixvim.nixosModules.nixvim
+	stylix.nixosModules.stylix
 
 	];
 

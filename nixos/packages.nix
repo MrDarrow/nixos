@@ -4,6 +4,7 @@
     (import ./dl-scrap.nix { inherit pkgs; })
     wl-clipboard
     xwayland-satellite
+    yazi
     waybar
     pywal
     mako

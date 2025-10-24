@@ -56,8 +56,8 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-#  services.displayManager.ly.enable = true;
+#  services.displayManager.sddm.enable = true;
+  services.displayManager.ly.enable = true;
   services.desktopManager.plasma6.enable = true;
   programs.niri.enable = true;
 
@@ -177,6 +177,11 @@
   nixpkgs.config.permittedInsecurePackages = [
     "broadcom-sta-6.30.223.271-57-6.12.54"
   ];
+
+  stylix = {
+  enable = true;
+  image = ./1.png;
+  };
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

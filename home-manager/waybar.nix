@@ -8,22 +8,22 @@
         layer = "top";
         position = "top";
 
-        modules-left = ["hyprland/workspaces" "hyprland/language"  "hyprland/window"];
+        modules-left = ["niri/workspaces" "niri/language"  "niri/window"];
         modules-center = ["clock" "custom/weather"];
         modules-right = ["tray" "pulseaudio" "custom/mem" "backlight" "battery"];
 
-        "hyprland/workspaces" = {
+        "niri/workspaces" = {
           disable-scroll = true;
         };
 
-        "hyprland/language" = {
+        "niri/language" = {
           format-en = "US";
           format-es= "ES";
     	    min-length = 5;
     	    tooltip = false;
         };
    
-        "hyprland/window" = { 
+        "niri/window" = { 
           max-length = 50;
         };
     

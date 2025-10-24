@@ -8,7 +8,7 @@
 #
 #    ./cursor.nix
 #    ./git.nix
-#    ./yazi.nix
+    ./yazi.nix
 #    ./htop.nix
 #    ./alacritty.nix
 #    ./gtk.nix
