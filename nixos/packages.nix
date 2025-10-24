@@ -4,6 +4,11 @@
     (import ./dl-scrap.nix { inherit pkgs; })
     wl-clipboard
     xwayland-satellite
+    waybar
+    pywal
+    mako
+    swaybg
+    foot
     alacritty
     fuzzel
     keepassxc

@@ -1,12 +1,3 @@
-{ pkgs, inputs, lib, ...}: {
-  programs.niri = {
-    settings = {
-      xwayland-satellite = {
-        enable = true;
-	path = "${lib.getExe pkgs.xwayland-satellite}";
-      };
-    
-    };
-  };
-
+{
+xdg.configFile."niri/config.kdl".source = ./config.kdl;
 }

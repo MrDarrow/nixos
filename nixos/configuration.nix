@@ -80,11 +80,19 @@
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
+  extraConfig.pipewire = {
+    "context.properties" = {
+      "default.clock.rate" = 48000;
+      "default.clock.quantum" = 2048;
+      "default.clock.min-quantum" = 2048;
+      "default.clock.max-quantum" = 8192;
+    };
+  };
+};
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
-  };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -136,7 +144,13 @@
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
-  programs.nixvim.enable = true;
+  programs.nixvim = {
+    enable = true;
+    plugins = {
+      vim-css-color.enable = true;
+      transparent.enable = true;
+    };
+  };
 
   services = {
     syncthing = {
