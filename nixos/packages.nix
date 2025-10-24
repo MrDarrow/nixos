@@ -3,7 +3,10 @@
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     wl-clipboard
+    alacritty
+    fuzzel
     keepassxc
+    thunderbird
     czkawka
     youtube-music
     ffmpeg

@@ -15,6 +15,9 @@
       url = "github:nix-community/nixvim";
     };
 
+    niri.url = "github:sodiboo/niri-flake";
+    
+
     schizofox.url = "github:schizofox/schizofox";
 
   };
