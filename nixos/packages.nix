@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     wl-clipboard
+    xwayland-satellite
     alacritty
     fuzzel
     keepassxc

@@ -1,4 +1,4 @@
-{ pkgs, config, nixosConfig, inputs, lib, ...}: {
+{ pkgs, inputs, lib, ...}: {
   programs.niri = {
     enable = true;
     

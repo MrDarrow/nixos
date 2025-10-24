@@ -9,6 +9,7 @@
     [
       ./hardware-configuration.nix
       ./packages.nix
+      ./niri.nix
     ];
 
   # Bootloader.
