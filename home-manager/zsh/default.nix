@@ -22,7 +22,7 @@
 
     ll = "ls -l";
     lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish -i";
-    jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish -i";
+    jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish";
     gallery = ''gallery-dl -f "/O" -d ~/Pictures'';
     };
 

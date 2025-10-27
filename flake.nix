@@ -20,7 +20,10 @@
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    quickshell = {
+      url = "github:outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix, ... }@inputs: 
@@ -45,7 +48,7 @@
 
 	./nixos/configuration.nix 
         inputs.nixvim.nixosModules.nixvim
-	stylix.nixosModules.stylix
+	inputs.stylix.nixosModules.stylix
 
 	];
 

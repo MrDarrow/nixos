@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   imports =
@@ -149,6 +149,13 @@
     plugins = {
       vim-css-color.enable = true;
       transparent.enable = true;
+      neoscroll = {
+        enable = true;
+      };
+    };
+    opts = {
+      number = true;
+      relativenumber = true;
     };
   };
 
@@ -179,8 +186,10 @@
   ];
 
   stylix = {
-  enable = true;
-  image = ./1.png;
+    enable = true;
+    image = ./1.png;
+    polarity = "dark";
+    targets.nixvim.transparentBackground.main = true;
   };
 
   # Enable the OpenSSH daemon.

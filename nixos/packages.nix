@@ -1,16 +1,21 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
 
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     wl-clipboard
+    eww
     xwayland-satellite
     yazi
-    waybar
-    pywal
+    mednafen
+    chafa
+    fzf
+    feh
     mako
+    waybar
+    swaylock
+    pywal
     swaybg
     foot
-    alacritty
     fuzzel
     keepassxc
     thunderbird
@@ -20,6 +25,7 @@
     lutris
     kdePackages.kalk
     kdePackages.dolphin
+    kdePackages.gwenview
     vim
     libreoffice
     hunspell

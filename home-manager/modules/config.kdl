@@ -33,9 +33,9 @@ input {
     }
 
     trackpoint {
-        // off
+         off
         // natural-scroll
-        // accel-speed 0.2
+         accel-speed 0.9
         // accel-profile "flat"
         // scroll-method "on-button-down"
         // scroll-button 273
@@ -93,7 +93,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "vesktop"
 spawn-at-startup "steam"
-spawn-sh-at-startup "swaybg -i ~/Pictures/Wallpaper/1.png"
+spawn-sh-at-startup "swaybg -i ~/nixos/nixos/1.png"
 spawn-sh-at-startup "pw-metadata -n settings 0 clock.force-quantum 2048"
 
 hotkey-overlay {
@@ -118,20 +118,17 @@ animations {
 
 //window-rules
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+	open-maximized true
+	draw-border-with-background false
 }
-
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
 }
-
 window-rule {
-	open-maximized true
-	draw-border-with-background false
-}	
-
+	match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+	default-floating-position x=10 y=10 relative-to="bottom-right"
+}
 window-rule {
 	match app-id="foot"
 	open-maximized false
@@ -189,7 +186,7 @@ binds {
  // Programs
     Mod+W { spawn "floorp"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Alt+L { spawn-sh "swaylock --daemonize && systemctl suspend"; }
     Mod+N { spawn "foot" "yazi"; }
 
     // Switch workspaces
