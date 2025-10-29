@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
     wl-clipboard
-    eww
     xwayland-satellite
     yazi
     mednafen
@@ -11,6 +10,7 @@
     fzf
     feh
     mako
+    transmission-gtk
     waybar
     swaylock
     pywal

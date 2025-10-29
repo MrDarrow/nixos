@@ -113,6 +113,9 @@
   programs.firefox.enable = true;
   environment.systemPackages = [ 
   ];
+  environment.variables = {
+    EDITOR = "neovim";
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -146,6 +149,7 @@
   programs.zsh.enable = true;
   programs.nixvim = {
     enable = true;
+    defaultEditor = true;
     plugins = {
       vim-css-color.enable = true;
       transparent.enable = true;
@@ -182,7 +186,7 @@
   # flake and stuff
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-57-6.12.54"
+    "broadcom-sta-6.30.223.271-57-6.12.55"
   ];
 
   stylix = {

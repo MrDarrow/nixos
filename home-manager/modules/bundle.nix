@@ -5,6 +5,7 @@
    ./programs/foot.nix
 #   ./programs/rofi.nix
     ./niri-config.nix
+    ./eww.nix
 #
 #    ./cursor.nix
 #    ./git.nix

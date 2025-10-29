@@ -28,8 +28,8 @@
         };
     
         "clock" = {
-            tooltip-format = "<tt><big>(calendar)</big></tt>";
             format = "{:%a; %d %b, %I:%M %p}";
+            tooltip-format = "<tt><big>(calendar)</big></tt>";
         };
     
         "pulseaudio" = {

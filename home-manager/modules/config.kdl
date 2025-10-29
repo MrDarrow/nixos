@@ -186,7 +186,7 @@ binds {
  // Programs
     Mod+W { spawn "floorp"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L { spawn-sh "swaylock --daemonize && systemctl suspend"; }
+    Super+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
     Mod+N { spawn "foot" "yazi"; }
 
     // Switch workspaces
