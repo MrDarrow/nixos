@@ -9,6 +9,8 @@
     ./stylix.nix
     ./eww.nix
     ./nixvim.nix
+    ./helix.nix
+    
 #
 #    ./cursor.nix
 #    ./git.nix

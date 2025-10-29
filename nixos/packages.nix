@@ -7,10 +7,12 @@
     yazi
     mednafen
     chafa
+    helix
     fzf
     feh
     mako
-    transmission-gtk
+    transmission_4-gtk
+    faugus-launcher
     waybar
     swaylock
     pywal
