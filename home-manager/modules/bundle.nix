@@ -1,3 +1,4 @@
+{ inputs, ... }:
 {
   imports = [
 #    ./programs/lf.nix
@@ -5,6 +6,7 @@
 #   ./programs/foot.nix
 #   ./programs/rofi.nix
     ./niri-config.nix
+    ./stylix.nix
     ./eww.nix
 #
 #    ./cursor.nix

@@ -189,12 +189,12 @@
     "broadcom-sta-6.30.223.271-57-6.12.55"
   ];
 
-  stylix = {
-    enable = true;
-    image = ./1.png;
-    polarity = "dark";
-    targets.nixvim.transparentBackground.main = true;
-  };
+#  stylix = {
+#    enable = true;
+#    image = ./1.png;
+#    polarity = "dark";
+#    targets.nixvim.transparentBackground.main = true;
+#  };
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
