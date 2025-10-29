@@ -47,7 +47,6 @@
       	modules = [ 
 
 	./nixos/configuration.nix 
-        inputs.nixvim.nixosModules.nixvim
 
 	];
 
@@ -58,6 +57,7 @@
       modules = [ 
         ./home-manager/default.nix
         inputs.schizofox.homeManagerModule
+        inputs.nixvim.homeModules.nixvim
 	stylix.homeModules.stylix
       ];
     };

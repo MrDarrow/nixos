@@ -2,10 +2,10 @@
   
   stylix = {
   enable = true;
-  image = "../../nixos/1.png";
+  image = ./1.png;
   polarity = "dark";
   targets = {
-    foot.enable = true;
+    nixvim.transparentBackground.main = true;
   };
   };
 }

@@ -114,7 +114,6 @@
   environment.systemPackages = [ 
   ];
   environment.variables = {
-    EDITOR = "neovim";
   };
 
   # Allow unfree packages
@@ -147,21 +146,21 @@
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
-  programs.nixvim = {
-    enable = true;
-    defaultEditor = true;
-    plugins = {
-      vim-css-color.enable = true;
-      transparent.enable = true;
-      neoscroll = {
-        enable = true;
-      };
-    };
-    opts = {
-      number = true;
-      relativenumber = true;
-    };
-  };
+#  programs.nixvim = {
+#    enable = true;
+#    defaultEditor = true;
+#    plugins = {
+#      vim-css-color.enable = true;
+#      transparent.enable = true;
+#      neoscroll = {
+#        enable = true;
+#      };
+#    };
+#    opts = {
+#      number = true;
+#      relativenumber = true;
+#    };
+#  };
 
   services = {
     syncthing = {
