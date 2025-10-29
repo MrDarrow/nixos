@@ -24,33 +24,33 @@ in
 
     settings = {
       main = {
-        font = "JetBrains Mono:size=13";
+#        font = "JetBrains Mono:size=13";
 	    pad = "0x0";
        };
 
       colors = {
-	alpha = "0.9";
+#	alpha = "0.9";
 
-        background = "${a0}";
-	foreground = "${ab}";
-
-        regular0 = "${a0}";
-	regular1 = "${a1}";
-	regular2 = "${a2}";
-	regular3 = "${a3}";
-	regular4 = "${a4}";
-	regular5 = "${a5}";
-	regular6 = "${a6}";
-	regular7 = "${a7}";
-
-	bright0  = "${b0}";
-	bright1  = "${b1}";
-	bright2  = "${b2}";
-	bright3  = "${b3}";
-	bright4  = "${b4}";
-	bright5  = "${b5}";
-	bright6  = "${b6}";
-	bright7  = "${a2}";
+#        background = "${a0}";
+#	foreground = "${ab}";
+#
+#        regular0 = "${a0}";
+#	regular1 = "${a1}";
+#	regular2 = "${a2}";
+#	regular3 = "${a3}";
+#	regular4 = "${a4}";
+#	regular5 = "${a5}";
+#	regular6 = "${a6}";
+#	regular7 = "${a7}";
+#
+#	bright0  = "${b0}";
+#	bright1  = "${b1}";
+#	bright2  = "${b2}";
+#	bright3  = "${b3}";
+#	bright4  = "${b4}";
+#	bright5  = "${b5}";
+#	bright6  = "${b6}";
+#	bright7  = "${a2}";
       }; 
       
       key-bindings = {

@@ -101,7 +101,7 @@
       }
       
       window#waybar {
-          background: #111a23;
+          background: @base00;
           transition-property: background-color; 
           transition-duration: 0.1s;
       }
@@ -118,11 +118,11 @@
         transition: all 0.1s cubic-bezier(0.55, -0.68, 0.48, 1.68);
       }
       #workspaces button.empty {
-      color: #111a23;
+      color: @base00;
       }
       #workspaces button.active {
-          background: #b4c7d8;
-          color: #111a23;
+          background: @base05;
+          color: @base00;
       }
       
       #language {
@@ -130,7 +130,7 @@
           padding-right: 6px;
           transition: none;
           background: transparent;
-          color: #e1e0e1;
+          color: @base05;
       }
 
       #clock,       
@@ -149,7 +149,7 @@
       #backlight,
       #battery {       
       background-color: transparent;
-      color: #e1e0e1;
+      color: @base05;
       }
       #battery.charging {
           background-color: #26A65B;
@@ -170,8 +170,8 @@
       }
       
       #tray {
-      color: #111a23;
-      background: #b4c7d8;
+      color: @base00;
+      background: @base05;
       }
     '';
       };

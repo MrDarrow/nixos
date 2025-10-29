@@ -3,11 +3,12 @@
   imports = [
 #    ./programs/lf.nix
 #    ./programs/newsboat.nix
-#   ./programs/foot.nix
+   ./programs/foot.nix
 #   ./programs/rofi.nix
     ./niri-config.nix
     ./stylix.nix
     ./eww.nix
+    ./nixvim.nix
 #
 #    ./cursor.nix
 #    ./git.nix
