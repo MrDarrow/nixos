@@ -5,7 +5,7 @@
 #    ./programs/newsboat.nix
    ./programs/foot.nix
 #   ./programs/rofi.nix
-    ./niri-config.nix
+    ./niri/niri-config.nix
     ./stylix.nix
     ./eww.nix
     ./nixvim.nix
