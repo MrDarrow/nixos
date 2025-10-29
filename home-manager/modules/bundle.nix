@@ -2,7 +2,7 @@
   imports = [
 #    ./programs/lf.nix
 #    ./programs/newsboat.nix
-   ./programs/foot.nix
+#   ./programs/foot.nix
 #   ./programs/rofi.nix
     ./niri-config.nix
     ./eww.nix
