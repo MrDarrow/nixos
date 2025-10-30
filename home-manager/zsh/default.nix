@@ -16,12 +16,12 @@
 
     hms = "home-manager switch --flake ${flakeDir}";
 
-    conf = "nvim ${flakeDir}/nixos/configuration.nix";
-    pkgs = "nvim ${flakeDir}/nixos/packages.nix";
-    plg = "nvim ${flakeDir}/nixos/modules/nixvim/plugins.nix";
+    conf = "hx ${flakeDir}/nixos/configuration.nix";
+    pkgs = "hx ${flakeDir}/nixos/packages.nix";
+    plg = "hx ${flakeDir}/nixos/modules/nixvim/plugins.nix";
 
     ll = "ls -l";
-    lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish -i";
+    lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish";
     jerry = "sh ~/.local/bin/jerry/jerry.sh -l spanish";
     gallery = ''gallery-dl -f "/O" -d ~/Pictures'';
     };

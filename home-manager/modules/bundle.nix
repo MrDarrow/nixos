@@ -7,7 +7,6 @@
 #   ./programs/rofi.nix
     ./niri/niri-config.nix
     ./stylix.nix
-    ./eww.nix
     ./nixvim.nix
     ./helix.nix
     

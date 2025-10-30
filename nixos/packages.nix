@@ -2,50 +2,54 @@
 
   environment.systemPackages = with pkgs; [
     (import ./dl-scrap.nix { inherit pkgs; })
-    wl-clipboard
-    xwayland-satellite
-    yazi
-    mednafen
-    chafa
-    helix
-    fzf
-    feh
-    mako
-    transmission_4-gtk
-    faugus-launcher
-    waybar
-    swaylock
-    pywal
-    swaybg
-    foot
-    fuzzel
-    keepassxc
-    thunderbird
+     
+    # Apps
     czkawka
-    youtube-music
-    ffmpeg
-    lutris
-    kdePackages.kalk
+    faugus-launcher
+    floorp-bin
+    fuzzel
+    gimp
+    hunspell
+    hunspellDicts.es-any
+    hunspellDicts.es-ve
     kdePackages.dolphin
     kdePackages.gwenview
-    vim
+    keepassxc
     libreoffice
-    hunspell
-    hunspellDicts.es-ve
-    hunspellDicts.es-any
-    gimp
-    unar
-    home-manager
-    git
-    gh
-    floorp-bin
-    vesktop
-    wineWowPackages.wayland
-    htop-vim
-
-    protonvpn-gui
     mpv
+    protonvpn-gui
+    thunderbird
+    transmission_4-gtk
+    vesktop
+    youtube-music
+
+    # CLI
+    bc
+    feh
+    ffmpeg
+    foot
     fzf
+    gh
+    git
+    helix
+    htop-vim
+    mako
+    mednafen
+    unar
+    vim
+    yazi
+
+    # Wayland Stuff
+    wineWowPackages.wayland
+    wl-clipboard
+    xwayland-satellite
+
+    # Misc
+    home-manager
+    swaybg
+    swaylock
+    uwu-colors
+    waybar
 
   ];
 }

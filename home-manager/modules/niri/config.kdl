@@ -75,7 +75,7 @@ layout {
 
     border {
         width 3
-        active-color "#877156"
+        active-color "#fedf8c"
         inactive-color "#505050"
 
         urgent-color "#9b0000"
@@ -187,8 +187,11 @@ binds {
  // Programs
     Mod+W { spawn "floorp"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Shift+P { spawn "keepassxc"; }
     Super+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
     Mod+N { spawn "foot" "yazi"; }
+    Mod+E { spawn "dolphin"; }
+    Mod+Shift+M { spawn "youtube-music"; }
 
     // Switch workspaces
     Mod+1 { focus-workspace 1; }
@@ -235,5 +238,5 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Powers off the monitors. To turn them back on, do any input like
-    Mod+Shift+P { power-off-monitors; }
+    Mod+Alt+P { power-off-monitors; }
 }

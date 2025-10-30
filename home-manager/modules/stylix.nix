@@ -2,7 +2,7 @@
   
   stylix = {
     enable = true;
-    image = ./1.png;
+    image = ./niri/1.png;
     polarity = "dark";
     opacity = {
       terminal = 0.8;
