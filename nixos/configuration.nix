@@ -1,8 +1,4 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, lib, inputs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -16,9 +12,7 @@
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
-  #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
+  networking.hostName = "nixos"; 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -55,10 +49,7 @@
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
 
-  # Enable the KDE Plasma Desktop Environment.
-#  services.displayManager.sddm.enable = true;
   services.displayManager.ly.enable = true;
-  services.desktopManager.plasma6.enable = true;
   programs.niri.enable = true;
 
   # Configure keymap in X11
@@ -90,13 +81,6 @@
   };
 };
 
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.darrow = {
     isNormalUser = true;
@@ -104,73 +88,29 @@
     shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" "syncthing" ];
     packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-  environment.systemPackages = [ 
-  ];
   environment.variables = {
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-#  environment.systemPackages = with pkgs; [
-#   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-#   libreoffice
-#   gimp
-#   unar
-#   home-manager
-#   git
-#   gh
-#   floorp
-#   vesktop
-#   wineWowPackages.wayland
-#   
-#   mindustry
-#   mindustry-server
-#
-#   tor-browser
-#   protonvpn-gui
-#   mpv
-#  #  wget
-#  ];
-
   programs.steam.enable = true;
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
-#  programs.nixvim = {
-#    enable = true;
-#    defaultEditor = true;
-#    plugins = {
-#      vim-css-color.enable = true;
-#      transparent.enable = true;
-#      neoscroll = {
-#        enable = true;
-#      };
-#    };
-#    opts = {
-#      number = true;
-#      relativenumber = true;
+
+#  services = {
+#    syncthing = {
+#      enable = true;
+#      group = "syncthing";
+#      user = "darrow";
+#      dataDir = "/home/darrow/syncthing";
+#      configDir = "/home/darrow/.config/syncthing";
 #    };
 #  };
-
-  services = {
-    syncthing = {
-      enable = true;
-      group = "syncthing";
-      user = "darrow";
-      dataDir = "/home/darrow/syncthing";
-      configDir = "/home/darrow/.config/syncthing";
-    };
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -187,13 +127,6 @@
   nixpkgs.config.permittedInsecurePackages = [
     "broadcom-sta-6.30.223.271-57-6.12.55"
   ];
-
-#  stylix = {
-#    enable = true;
-#    image = ./1.png;
-#    polarity = "dark";
-#    targets.nixvim.transparentBackground.main = true;
-#  };
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

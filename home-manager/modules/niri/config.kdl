@@ -93,7 +93,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "vesktop"
 spawn-at-startup "steam"
-spawn-sh-at-startup "swaybg -i ~/nixos/home-manager/modules/1.png"
+spawn-sh-at-startup "swaybg -i ~/nixos/home-manager/modules/niri/1.png"
 spawn-sh-at-startup "pw-metadata -n settings 0 clock.force-quantum 2048"
 spawn-sh-at-startup "wine ~/Desktop/Tribes_RPG.lnk"
 
