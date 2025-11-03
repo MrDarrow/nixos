@@ -18,7 +18,6 @@
 
     conf = "hx ${flakeDir}/nixos/configuration.nix";
     pkgs = "hx ${flakeDir}/nixos/packages.nix";
-    plg = "hx ${flakeDir}/nixos/modules/nixvim/plugins.nix";
 
     ll = "ls -l";
     lobster = "sh ~/.local/bin/lobster/lobster.sh -l spanish";

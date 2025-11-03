@@ -12,6 +12,7 @@
     hunspell
     hunspellDicts.es-any
     hunspellDicts.es-ve
+    inputs.zen-browser.packages."${system}".default
     kdePackages.dolphin
     kdePackages.gwenview
     keepassxc
@@ -38,6 +39,7 @@
     unar
     vim
     yazi
+    zk
 
     # Wayland Stuff
     wineWowPackages.wayland
@@ -49,7 +51,10 @@
     swaybg
     swaylock
     uwu-colors
+    marksman
     waybar
+    hackneyed
+    dracula-theme
 
   ];
 }

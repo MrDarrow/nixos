@@ -5,6 +5,8 @@
     [
       ./hardware-configuration.nix
       ./packages.nix
+      ./programs_enable.nix
+      ./syncthing.nix
     ];
 
   # Bootloader.
@@ -125,7 +127,7 @@
   # flake and stuff
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-57-6.12.55"
+    "broadcom-sta-6.30.223.271-57-6.12.56"
   ];
 
   # Enable the OpenSSH daemon.
