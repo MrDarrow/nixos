@@ -1,8 +1,8 @@
 {
-  services.mako = {
+  programs.zk = {
     enable = true;
     settings = {
-      default-timeout = 5000;
+      dir = "~/syncthing/notes";
     };
   };
 }

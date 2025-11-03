@@ -8,6 +8,8 @@
     ./niri/niri-config.nix
     ./stylix.nix
     ./helix.nix
+    ./mako.nix
+    ./zk.nix
     
 #
 #    ./cursor.nix

@@ -190,7 +190,7 @@ binds {
     Mod+Shift+PERIOD  { move-column-to-monitor-right; }
 
  // Programs
-    Mod+W { spawn "floorp"; }
+    Mod+W { spawn "zen"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Shift+P { spawn "keepassxc"; }
     Super+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
