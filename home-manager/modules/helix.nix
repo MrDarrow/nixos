@@ -29,6 +29,10 @@
         name = "markdown";
         language-servers = [ "marksman" "uwu_colors" ];
       }
+      {
+        name = "html";
+        language-servers = [ "uwu_colors" ];
+      }
     ];
    };
  };

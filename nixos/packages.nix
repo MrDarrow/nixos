@@ -5,6 +5,7 @@
      
     # Apps
     czkawka
+    duckstation
     faugus-launcher
     floorp-bin
     fuzzel
@@ -25,6 +26,7 @@
     youtube-music
 
     # CLI
+    bat
     bc
     feh
     ffmpeg
@@ -35,7 +37,6 @@
     helix
     htop-vim
     mako
-    mednafen
     unar
     vim
     yazi

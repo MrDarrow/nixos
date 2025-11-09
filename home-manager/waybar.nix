@@ -112,6 +112,7 @@
 
       #workspaces,      
       #workspaces button {
+        color: @base05;
         box-shadow: inset 0 -3px transparent;
         padding-right: 6px;
         padding-left: 6px;

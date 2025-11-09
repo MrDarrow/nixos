@@ -1,6 +1,17 @@
+{ pkgs, ... }:
 {
-  programs.steam.enable = true;
-  programs.steam.gamescopeSession.enable = true;
-  programs.gamemode.enable = true;
-  programs.zsh.enable = true;
+  programs = {
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+    };
+    gamemode.enable = true;
+    zsh.enable = true;
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        xorg.libX11
+      ];
+    };
+  };
 }
