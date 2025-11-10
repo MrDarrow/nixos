@@ -41,6 +41,7 @@
     vim
     yazi
     zk
+    wf-recorder
 
     # Wayland Stuff
     wineWowPackages.wayland
