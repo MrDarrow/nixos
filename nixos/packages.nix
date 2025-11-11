@@ -14,6 +14,7 @@
     hunspellDicts.es-any
     hunspellDicts.es-ve
     inputs.zen-browser.packages."${system}".default
+    inputs.noctalia.packages.${system}.default
     kdePackages.dolphin
     kdePackages.gwenview
     keepassxc
@@ -27,6 +28,7 @@
 
     # CLI
     bat
+    dragon-drop
     bc
     feh
     ffmpeg
@@ -42,6 +44,7 @@
     yazi
     zk
     wf-recorder
+    slurp
 
     # Wayland Stuff
     wineWowPackages.wayland

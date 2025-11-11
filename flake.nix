@@ -22,7 +22,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    pollymc.url = "github:fn2006/PollyMC";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.quickshell.follows = "quickshell";  # Use same quickshell version
+    };
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

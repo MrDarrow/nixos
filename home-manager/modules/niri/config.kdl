@@ -142,17 +142,19 @@ window-rule {
 
 //binds
 binds {
-    Mod+Shift+Slash { show-hotkey-overlay; }
 
+    Mod+F                                              { maximize-column; }
+    Mod+O repeat=false                                 { toggle-overview; }
+    Mod+Q repeat=false                                 { close-window; }
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+    Mod+U                                              { toggle-window-floating; }
+
     Mod+Return { spawn "foot"; }
-    Mod+Q repeat=false { close-window; }
-    Mod+Shift+Q { quit; }
-    Mod+U       { toggle-window-floating; }
-    Mod+Shift+U { switch-focus-between-floating-and-tiling; }
-    Mod+F { maximize-column; }
+
     Mod+Shift+F { fullscreen-window; }
-    Mod+O repeat=false { toggle-overview; }
+    Mod+Shift+Q { quit; }
+    Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Shift+U { switch-focus-between-floating-and-tiling; }
 
     // Screenshots
     Print { screenshot; }
@@ -193,8 +195,9 @@ binds {
     Mod+W { spawn "zen"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Shift+P { spawn "keepassxc"; }
-    Super+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
+    Mod+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
     Mod+N { spawn "foot" "yazi"; }
+    Mod+Shift+X { spawn "foot" "bc" "-lq" ; }
     Mod+E { spawn "dolphin"; }
     Mod+Shift+M { spawn "youtube-music"; }
 

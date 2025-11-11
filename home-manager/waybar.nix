@@ -9,7 +9,7 @@
         position = "top";
 
         modules-left = ["niri/workspaces" "niri/language"  "niri/window"];
-        modules-center = ["clock" "custom/weather"];
+        modules-center = ["clock"];
         modules-right = ["tray" "pulseaudio" "custom/mem" "backlight" "battery"];
 
         "niri/workspaces" = {
