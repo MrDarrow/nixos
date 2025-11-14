@@ -62,6 +62,7 @@
           ./home-manager/default.nix
           inputs.schizofox.homeManagerModule
        	  stylix.homeModules.stylix
+       	  inputs.noctalia.homeModules.default
         ];
       };
   };

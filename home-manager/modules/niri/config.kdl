@@ -90,10 +90,11 @@ layout {
 }
 
 // exec
-spawn-at-startup "waybar"
+//spawn-at-startup "waybar"
+spawn-at-startup "noctalia-shell"
 spawn-at-startup "vesktop"
 spawn-at-startup "steam"
-spawn-sh-at-startup "swaybg -i ~/nixos/home-manager/modules/niri/1.png"
+//spawn-sh-at-startup "swaybg -i ~/nixos/home-manager/modules/niri/1.png"
 spawn-sh-at-startup "pw-metadata -n settings 0 clock.force-quantum 2048"
 spawn-sh-at-startup "wine ~/Desktop/Tribes_RPG.lnk"
 
@@ -122,6 +123,10 @@ animations {
      off
 }
 
+debug {
+	honor-xdg-activation-with-invalid-serial
+}
+
 //window-rules
 window-rule {
 	open-maximized true
@@ -138,6 +143,11 @@ window-rule {
 window-rule {
 	match app-id="foot"
 	open-maximized false
+}
+
+layer-rule {
+	match namespace="^noctalia-overview*"
+	place-within-backdrop true
 }
 
 //binds
@@ -193,11 +203,15 @@ binds {
 
  // Programs
     Mod+W { spawn "zen"; }
-    Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    XF86HomePage { spawn "zen"; }
+//Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+	Mod+P { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+Shift+P { spawn "keepassxc"; }
-    Mod+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
+//    Mod+Alt+L { spawn-sh "swaylock -f && systemctl suspend"; }
+	Mod+Alt+L { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
     Mod+N { spawn "foot" "yazi"; }
     Mod+Shift+X { spawn "foot" "bc" "-lq" ; }
+    XF86Calculator { spawn "foot" "bc" "-lq" ; }
     Mod+E { spawn "dolphin"; }
     Mod+Shift+M { spawn "youtube-music"; }
 
@@ -228,6 +242,10 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+	XF86AudioPlay { spawn "noctalia-shell" "ipc" "call" "media" "playPause"; }
+	XF86AudioPrev { spawn "noctalia-shell" "ipc" "call" "media" "previous"; }
+	XF86AudioNext { spawn "noctalia-shell" "ipc" "call" "media" "next"; }
+   
 
     // Scroll through workspaces
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }

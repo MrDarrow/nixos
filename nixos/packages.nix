@@ -53,8 +53,6 @@
 
     # Misc
     home-manager
-    swaybg
-    swaylock
     uwu-colors
     marksman
     waybar

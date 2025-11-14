@@ -24,8 +24,7 @@
   networking.wireless.iwd.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
 
-  hardware.bluetooth.enable = true;
-  services.power-profiles-daemon.enable = true;
+  services.tuned.enable = true;
   services.upower.enable = true;
 
   hardware.graphics = {
