@@ -33,6 +33,10 @@
         name = "html";
         language-servers = [ "uwu_colors" ];
       }
+      {
+        name = "kdl";
+        language-servers = [ "uwu_colors" ];
+      }
     ];
    };
  };

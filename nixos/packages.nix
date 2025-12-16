@@ -7,7 +7,7 @@
     czkawka
     duckstation
     faugus-launcher
-    floorp-bin
+    #floorp-bin
     fuzzel
     gimp
     hunspell
@@ -18,13 +18,14 @@
     kdePackages.dolphin
     kdePackages.gwenview
     keepassxc
-    libreoffice
+    onlyoffice-desktopeditors
     mpv
     protonvpn-gui
     thunderbird
     transmission_4-gtk
     vesktop
     youtube-music
+    tetrio-desktop
 
     # CLI
     bat
@@ -32,6 +33,7 @@
     bc
     feh
     ffmpeg
+  	ffmpegthumbnailer
     foot
     fzf
     gh
@@ -42,7 +44,7 @@
     unar
     vim
     yazi
-    zk
+    nb
     wf-recorder
     slurp
 
