@@ -5,7 +5,6 @@
      
     # Apps
     czkawka
-    duckstation
     faugus-launcher
     #floorp-bin
     fuzzel
