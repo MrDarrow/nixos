@@ -10,7 +10,6 @@
     ./helix.nix
     ./mako.nix
     ./zk.nix
-    ./noctalia.nix
     
 #
 #    ./cursor.nix
