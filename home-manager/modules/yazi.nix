@@ -17,4 +17,15 @@
       };
     };
   };
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "image/jpeg" = "qimgv.desktop";
+      "image/png" = "qimgv.desktop";
+      "image/gif" = "qimgv.desktop";
+      "image/webp" = "qimgv.desktop";
+      "image/svg+xml" = "qimgv.desktop";
+      # Add other image/* types as needed
+    };
+  };
 }

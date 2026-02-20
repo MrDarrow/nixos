@@ -202,8 +202,8 @@ binds {
     Mod+Shift+PERIOD  { move-column-to-monitor-right; }
 
  // Programs
-    Mod+W { spawn "zen"; }
-    XF86HomePage { spawn "zen"; }
+    Mod+W { spawn "zen-beta"; }
+    XF86HomePage { spawn "zen-beta"; }
 //Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
 	Mod+P { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+Shift+P { spawn "keepassxc"; }

@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, pkgsStable, lib, ... }:
 
 {
   imports =
@@ -130,7 +130,10 @@
   # flake and stuff
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-59-6.12.65"
+    "broadcom-sta-6.30.223.271-59-6.18.12"
+  ];
+  environment.systemPackages = [
+    pkgsStable.wineWowPackages.wayland
   ];
 
   # Enable the OpenSSH daemon.

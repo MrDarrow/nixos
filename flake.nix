@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
 
     home-manager = {
       
@@ -34,11 +35,16 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, stylix, nixpkgs-stable, ... }@inputs: 
 
     let
 
       system = "x86_64-linux";
+      
+      pkgsStable = import nixpkgs-stable {
+        inherit system;
+        config.allowUnfree = true; # Optional: allow unfree packages
+      };
 
     in {
 
@@ -46,6 +52,7 @@
 
         specialArgs = {
       	  inherit inputs system;
+      	  inherit pkgsStable;
       	};
 
       	modules = [ 

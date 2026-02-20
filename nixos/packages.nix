@@ -6,7 +6,7 @@
     # Apps
     czkawka
     faugus-launcher
-    #floorp-bin
+#    floorp-bin
     fuzzel
     gimp
     hunspell
@@ -30,7 +30,7 @@
     bat
     dragon-drop
     bc
-    feh
+    qimgv
     ffmpeg
   	ffmpegthumbnailer
     foot
@@ -48,7 +48,6 @@
     slurp
 
     # Wayland Stuff
-    wineWowPackages.wayland
     wl-clipboard
     xwayland-satellite
 
