@@ -9,7 +9,6 @@
     };
     targets = {
       nixvim.transparentBackground.main = true;
-      helix.enable = true;
     };
   };
 }

@@ -1,20 +1,20 @@
 let
-  a0 = "161c23";
-  ab = "4e453f";
-  a1 = "836451";
-  a2 = "a69c91";
-  a3 = "b5aa9b";
-  a4 = "c1b59d";
-  a5 = "c3b7a0";
-  a6 = "c6b7a2";
-  a7 = "85919e";
-  b0 = "87929d";
-  b1 = "6f9b9a";
-  b2 = "6c9694";
-  b3 = "929694";
-  b4 = "8a8d8d";
-  b5 = "9f8e7b";
-  b6 = "88969e";
+#  a0 = "161c23";
+#  ab = "4e453f";
+#  a1 = "836451";
+#  a2 = "a69c91";
+#  a3 = "b5aa9b";
+#  a4 = "c1b59d";
+#  a5 = "c3b7a0";
+#  a6 = "c6b7a2";
+#  a7 = "85919e";
+#  b0 = "87929d";
+#  b1 = "6f9b9a";
+#  b2 = "6c9694";
+#  b3 = "929694";
+#  b4 = "8a8d8d";
+#  b5 = "9f8e7b";
+#  b6 = "88969e";
 
 in
 {
@@ -24,12 +24,12 @@ in
 
     settings = {
       main = {
-#        font = "JetBrains Mono:size=13";
+#        font = "DejaVu Sans Mono:size=12";
 	    pad = "0x0";
        };
 
-      colors = {
-#	alpha = "0.9";
+      colors-dark = {
+#	alpha = "0.8";
 
 #        background = "${a0}";
 #	foreground = "${ab}";
@@ -51,6 +51,7 @@ in
 #	bright5  = "${b5}";
 #	bright6  = "${b6}";
 #	bright7  = "${a2}";
+
       }; 
       
       key-bindings = {

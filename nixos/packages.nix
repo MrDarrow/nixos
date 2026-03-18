@@ -6,7 +6,7 @@
     # Apps
     czkawka
     faugus-launcher
-#    floorp-bin
+    floorp-bin
     fuzzel
     gimp
     hunspell

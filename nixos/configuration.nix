@@ -130,7 +130,7 @@
   # flake and stuff
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-59-6.18.12"
+    "broadcom-sta-6.30.223.271-59-6.18.18"
   ];
   environment.systemPackages = [
     pkgsStable.wineWowPackages.wayland
