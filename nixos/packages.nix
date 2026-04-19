@@ -19,11 +19,11 @@
     keepassxc
     onlyoffice-desktopeditors
     mpv
-    protonvpn-gui
+    proton-vpn
     thunderbird
     transmission_4-gtk
     vesktop
-    youtube-music
+    pear-desktop
     tetrio-desktop
 
     # CLI

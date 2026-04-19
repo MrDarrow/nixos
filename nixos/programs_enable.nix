@@ -11,6 +11,7 @@
       enable = true;
       libraries = with pkgs; [
         xorg.libX11
+        sqlite
       ];
     };
   };
