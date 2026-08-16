@@ -52,14 +52,16 @@
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
+  };
 
-  services.displayManager.ly.enable = true;
+#  services.displayManager.ly.enable = true;
   programs.niri.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "us";
+    layout = "latam"; # originally us
     variant = "";
   };
 
@@ -130,7 +132,7 @@
   # flake and stuff
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.permittedInsecurePackages = [
-    "broadcom-sta-6.30.223.271-59-6.18.22"
+    "broadcom-sta-6.30.223.271-63-6.18.40"
   ];
   environment.systemPackages = [
     pkgsStable.wineWowPackages.wayland

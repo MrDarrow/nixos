@@ -33,9 +33,15 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    qylock = {
+      url= "github:Darkkal44/qylock";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, nixpkgs-stable, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, stylix, nixpkgs-stable, qylock, ... }@inputs: 
 
     let
 
@@ -58,6 +64,18 @@
       	modules = [ 
 
         	./nixos/configuration.nix 
+        	qylock.nixosModules.default
+        	({ pkgs, ... }: {
+        	  services.displayManager.sddm.enable = true;
+        	  services.displayManager.sddm.wayland.enable = true;
+
+        	  programs.qylock = {
+        	    enable = true;
+        	    theme = "enfield";
+        	    sddm.enable = true;
+        	    quickshell.enable = true;
+        	  };
+        	})
        
        	];
 

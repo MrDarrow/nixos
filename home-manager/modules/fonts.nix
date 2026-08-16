@@ -8,6 +8,7 @@
     font-awesome
     jetbrains-mono
     nerd-fonts.symbols-only
+    fira-code
   ];
 
 }

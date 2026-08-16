@@ -4,7 +4,6 @@
     (import ./dl-scrap.nix { inherit pkgs; })
      
     # Apps
-    czkawka
     faugus-launcher
     floorp-bin
     fuzzel
@@ -25,6 +24,8 @@
     vesktop
     pear-desktop
     tetrio-desktop
+    openrct2
+    stremio-linux-shell
 
     # CLI
     bat
@@ -57,7 +58,6 @@
     marksman
     waybar
     hackneyed
-    dracula-theme
 
   ];
 }
